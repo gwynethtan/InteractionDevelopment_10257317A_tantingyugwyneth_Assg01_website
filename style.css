@@ -1,0 +1,33 @@
+html{
+    font-family: 'Gluten', cursive;
+    font-family: 'Patrick Hand', cursive;
+    background-color:#EFE9DC;
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color:#E8DCBD;
+}
+
+.main_nav ul{
+    font-size: 20px;
+    display:flex;
+    gap:90px;
+    list-style-type:none;
+}
+
+.main_nav a{
+    text-decoration: none;
+    color:#CEA359;
+
+}
+
+.splash{
+
+}
+
+.promo{
+    background-color:#CEA359 ;
+}
