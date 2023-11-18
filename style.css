@@ -18,16 +18,43 @@ header{
     list-style-type:none;
 }
 
-.main_nav a{
+.main_nav a{ /* For words in the navigation bar*/
     text-decoration: none;
     color:#CEA359;
 
 }
-
 .splash{
+    display:flex;
+    padding-left: 30px;
 
 }
+.splash_info{ /* For h1,h2 and button content*/
+    position:absolute;
+    left:100px;
+    
+}
 
+.splash_info h1{
+    color:#CEA359;
+    font-weight:normal;
+}
+.splash_info h2{
+    width:550px;
+    color:#CEA359;
+    font-weight:normal;
+}
+
+.splash_info button{
+    display: inline-block;
+    padding: 10px 30px;
+    border-radius: 10px;
+    font-size: 20px;
+    background-color: #CEA359;
+    color:#f5f5f5;
+    outline: none;
+    border:none;
+    padding :9px,25px;
+}
 .promo{
     background-color:#CEA359 ;
 }
