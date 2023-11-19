@@ -4,6 +4,9 @@ html{
     background-color:#EFE9DC;
 }
 
+
+/*Navigation bar*/
+
 header{
     display: flex;
     justify-content: space-around;
@@ -21,17 +24,27 @@ header{
 .main_nav a{ /* For words in the navigation bar*/
     text-decoration: none;
     color:#CEA359;
-
+    flex:1;
 }
+
+
+/*Splash screen*/
 .splash{
     display:flex;
-    padding-left: 30px;
-
+    align-items: center;
 }
-.splash_info{ /* For h1,h2 and button content*/
-    position:absolute;
-    left:100px;
-    
+
+.splash_info { /*ensuring side by side contents are equal*/
+    flex: 1;
+    width:50%;
+}  
+
+.splash_info:first-child {  /*includes h1 h2 and button*/
+    margin-left: 50px;
+} 
+.splash_info img{
+    padding-right:20%;
+    width:90%;
 }
 
 .splash_info h1{
@@ -39,22 +52,101 @@ header{
     font-weight:normal;
 }
 .splash_info h2{
-    width:550px;
+    width:90%;
     color:#CEA359;
     font-weight:normal;
+    padding-bottom:10px ;
 }
 
-.splash_info button{
-    display: inline-block;
-    padding: 10px 30px;
+.shop_now{
+    padding: 10px 26px;
     border-radius: 10px;
     font-size: 20px;
     background-color: #CEA359;
     color:#f5f5f5;
     outline: none;
     border:none;
-    padding :9px,25px;
 }
+
+/*Promo*/
 .promo{
     background-color:#CEA359 ;
+    width:100%;
+    height: 700px;
+    display:flex;
+    align-items: center;
+}
+
+.promo_info {
+    flex: 1;
+    width:50%;
+}  
+.promo_info img{
+    padding-right: 20%;
+    width:60%;
+    margin-left: 30px;
+}
+.promo_info:nth-child(2){
+    display:flex;
+    align-content: center;
+}
+
+.banner{  /*promo banner*/
+    width:80%;
+    padding:10px;
+    border-radius: 20px;
+    margin:auto;
+    background-color:#f5f5f5;
+    text-align: center;
+    
+} 
+.banner h2{
+    font-weight: normal;
+    color:#CEA359;
+    font-size: 60px;
+}
+
+/*Catelogue*/
+
+ .catelogue {
+    position: relative;
+    text-align: center;
+    border: 2px solid yellow;
+    padding:2%;
+ }
+.title{
+    font-weight: normal;
+    font-size: 36px;
+    color:#CEA359;
+}
+.all_items {
+    display: flex;
+    justify-content: center;
+}
+
+.item {
+    text-align: center;
+    margin: 5%;
+    flex: 1; 
+    position: relative;  /*for aligning button*/
+}
+
+.item p{
+    color:#CEA359;
+    font-weight:normal;
+    font-size: 24px;
+}
+
+.item_img {
+    max-width: 100%;
+    height: auto;
+    border-radius:10px;
+    position:relative;
+}
+
+.catelogue .shop_now{
+    position:absolute;
+    bottom: 10%; 
+    left: 50%; 
+    transform: translate(-50%, 50%); /* Center button */
 }
