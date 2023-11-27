@@ -4,6 +4,7 @@ html{
     background-color:#EFE9DC;
 }
 
+/*main page*/
 
 /*Navigation bar*/
 
@@ -58,7 +59,7 @@ header{
     padding-bottom:10px ;
 }
 
-.shop_now{
+.shop_now{ /*shop now button*/
     padding: 10px 26px;
     border-radius: 10px;
     font-size: 20px;
@@ -66,7 +67,8 @@ header{
     color:#f5f5f5;
     outline: none;
     border:none;
-    
+    text-decoration: none;
+    font-weight:normal;
 }
 
 /*Promo*/
@@ -152,35 +154,89 @@ header{
     transform: translate(-50%, 50%); /* Center button */
 }
 
+
+
 .testimonial {
-    height:900px;
+    height:20%;
+    display:flex;
+    align-items: center;
 }
+
+
+
+
+
 
 /*footer*/
-.footer {
+footer {
     background-color: #CEA359;
-
+    display:flex; 
+    align-items: center;
+    text-align: center;
+    height:10%;
 }
-.footer h4{
+
+footer h4{
+    padding-top: 2%;
     color:#f5f5f5;
     font-weight:normal;
     font-size: 30px;
-}
-
-.social_media {
-    height:30px;
-    width:30px;
     text-align: center;
-    margin: 5%;
+}
+.social_media
+    {
+        display: flex;
+        justify-content: center;
+        padding-top: 2%;
+    }
+
+
+    
+.social_media img {
+    height:40px;
+    width:40px;
+    margin: 1%;
     flex: 1; 
-    position: relative; 
 }
 
-.footer p{
+footer p{
     font-size:15px;
-    color:#f5f5f5
+    color:#f5f5f5;
+    text-align: center;
 }
 
 .footer br{
-    color:#f5f5f5
+    color:#f5f5f5;
+}
+
+
+
+
+
+
+
+
+
+/*contact page*/
+.content_description{
+    color:#CEA359;
+    font-weight:normal;
+    padding-left :5%;
+    padding-top:1%;
+}
+/*form*/
+
+.contact_form{
+    margin:auto;
+    background-color: #E8DCBD;
+    border-radius: 20px;
+    height:auto;
+    width:86%;
+}
+
+input{
+    width:60%;
+    height:5%;
+    border-color: #CEA359;
+    border-radius: 2px;
 }
