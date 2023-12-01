@@ -1,6 +1,6 @@
 # InteractiveDevelopment_10257317A_tantingyugwyneth_Assg01_website
 
-#gwynethbakes
+# gwynethbakes
 
 My project idea is to create a website for a fictional company called “gwynethbakes”. The company sells affordable bakery DIY packs which contain instructions and ingredients to make a pastry. Customers are able to make the pastry at the comfort of their home and can use it as an opportunity to bond with their loved ones. Gwynethbakes aims to create an inclusive environment with the idea that anyone is able to bake. Baking should be an enjoyable experience for everyone.This website is for anyone who wants to learn how to make a pastry. 
 
@@ -9,7 +9,7 @@ My project idea is to create a website for a fictional company called “gwyneth
 The website would have a happy and wholesome feel. Hence, I decided to use upbeat colors like orange and yellow and a cuter font to ensure that the website seems welcoming.
 
 
-##User stories 
+## User stories 
 As someone new to baking, I want the packs to have easy to follow instructions.
 
 As a low or middle income person, I want the packs to be affordable.
@@ -24,33 +24,34 @@ As a person who loves deals, I would like the website to allow people to key in 
 
 The wireframe is shown in the github folder
 
-##Features
+## Features
 Feature 1-Users are able to access and view gwynethbakes’ social media accounts
 Feature 2-User can click arrows at the side of the testimony to view previous or next testimonials.
 Feature 3-Users are able to click and see the pastry they are interested in and can see more information about it 
 Feature 4-Users can type in personal details and promo code into the order form
 Feature 5-Users can fill up a form that allows them to ask questions or give feedback to gwynethbakes
 Feature 6-User should be alerted when he or she input wrongly or nothing into the form 
-Testing 
 
-##Contact form 
+## Testing 
+
+Contact form 
 Go to contact form page 
 Enter wrong details and submit
 Enter empty details and submit
 
-##Purchase form 
+Purchase form 
 Go to purchase form page 
 Enter wrong details and submit
 Enter empty details and submit
 
-##Testimonials 
+Testimonials 
 Click next to see next testimonial 
 Click previous to see next testimonial 
 
-##Catalogue page 
+## Catalogue page 
 Click item to view item description
 
-##Credits
+## Credits
 https://stock.adobe.com/sg/images/bread-pastry-product/499942651?prev_url=detail&asset_id=499942651
 
 https://stock.adobe.com/sg/images/set-of-fresh-bread-for-breakfast/607081079?prev_url=detail&asset_id=607081079
