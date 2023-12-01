@@ -1,4 +1,4 @@
-html{
+html{ /*prepping font and main colors*/
     font-family: 'Gluten', cursive;
     font-family: 'Patrick Hand', cursive;
     background-color:#EFE9DC;
@@ -9,9 +9,9 @@ html{
 
 /*Navigation bar*/
 
-header{
+header{ 
     display: flex;
-    justify-content: space-around;
+    flex-direction: row;
     align-items: center;
     background-color:#E8DCBD;
     width: 100%;
@@ -20,11 +20,13 @@ header{
     padding-bottom: 20px;
 }
 
-body{  
-    display: flex;
-    flex-direction: column;
-    min-height: 100%;
-}
+.logo {
+    width:100px;
+    height:auto;
+    padding-left:15px;
+    padding-right: 30px;
+    }
+
 .main_nav ul{
     font-size: 20px;
     display:flex;
@@ -32,12 +34,18 @@ body{
     list-style-type:none;
 }
 
-.main_nav a{ /* For words in the navigation bar*/
+.main_nav ul a{ /* For different pages in the navigation bar*/
     text-decoration: none;
     color:#CEA359;
     flex:1;
 }
 
+
+body{ /*to ensure footer sticks to the end of page*/
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
 
 /*Splash screen*/
 .splash{
@@ -48,6 +56,7 @@ body{
 .splash_info { /*ensuring side by side contents are equal*/
     flex: 1;
     width:50%;
+    padding-left:20px;
 }  
 
 .splash_info:first-child {  /*includes h1 h2 and button*/
@@ -113,48 +122,40 @@ body{
     margin-left:10%;
     background-color:#f5f5f5;
     text-align: center;
-    
 } 
+
 .banner h2{
     font-weight: normal;
     color:#CEA359;
     font-size: 60px;
 }
 
-
-
-
-
 /*Catelogue*/
-
  .catelogue {
     position: relative;
     text-align: center;
-    padding:2%;
  }
-.title{
-    font-weight: normal;
+
+.title{  /*titles for each section*/
+    font-weight: normal; 
     font-size: 36px;
     color:#CEA359;
 }
 
-
-.all_items {
+.all_items { /*to be used in catelogue page too*/
     display: flex;
     justify-content: center;
 }
 
-
-
-.item {
-    list-style-type:none;
+.item {  /*to be used in catelogue page too*/
     text-align: center;
     margin: 5%;
+    margin-bottom: 10%;
     flex: 1; 
     position: relative;  /*for aligning button*/
 }
 
-.item a {
+.item a { /*remove underlines*/
     list-style-type:none;
     text-decoration: none;
 }
@@ -178,9 +179,7 @@ body{
     transform: translate(-50%, 50%); /* Center button */
 }
 
-
-
-
+ /*testimonial*/
 .testimonial {
     display:flex;
     flex-direction: column;
@@ -194,11 +193,10 @@ body{
 
 #round_top {
     position: absolute;
-    
     left: 50%;
     transform: translateX(-50%);
     width: 460px;
-    height: 240px;
+    height: 250px;
     border-radius: 50%;
     background-color: #E8DCBD;
 }
@@ -217,7 +215,7 @@ body{
     text-align: center;
     border-radius: 10px;
     align-items: center;
-    z-index: 1; /* Ensure bread_container appears above round_top */
+    z-index: 1; /* Ensure it appears above round_top */
 }
 
 #bread_container p{
@@ -229,31 +227,33 @@ body{
 .next_arrow{
     transform: rotate(270deg); /* to not affect the direction of paddings */
 }
-#next{
-    float: right;
+#next{ /*remove button design*/
 	background: none;
 	border: none;
 	padding: 0;
 	cursor: pointer;
-    padding-left: 600px;
-	
+    padding-left: 2px;
 }
 
 .prev_arrow{
     transform: rotate(90deg); /* to not affect the direction of paddings */
 }
 
-#prev{
-    padding-left: 600px;
-    
-    float:left;
+.arrow_buttons {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around; 
+    margin-bottom: 10px;
+}
+
+#prev{ /*remove button design*/
 	background: none;
 	border: none;
 	padding: 0;
 	cursor: pointer;
 }
 
-#bread img {
+.arrow_buttons img {
     padding-top:40px;
     width:50px;
     height:50px;
@@ -275,7 +275,6 @@ footer h4 {
     font-size: 30px;
     text-align: center;
     padding-top:16px;
-    
 }
 
 .social_media {
@@ -284,17 +283,14 @@ footer h4 {
     align-items: center;
     justify-content: center;
     height: 50px;
-
   }
   
-.social_media a {
-
+.social_media a { /*ensure the icons are horizontal*/
     display: inline-block;
     padding:26px;
   }
 
-.social_media img
-  {
+.social_media img{
     height:35px;
     width:35px;
   }
@@ -314,10 +310,9 @@ footer h4 {
     
   }
 
-
-
 /*contact page*/
-/*page title*/
+
+/*page title which will be used in other pages too*/
 .content_description{
     padding-left :5%;
     margin-top: 1px;
@@ -328,7 +323,6 @@ footer h4 {
     text-decoration: none;
     font-weight:normal;
     font-size: 50px;
-    outline:red dotted 1px;
     margin-bottom:1px;
 }
 
@@ -343,14 +337,14 @@ footer h4 {
     width:86%;
 }
 
-.questions{
+.questions{ 
     align-items: center;
     display:flex;
     flex-direction: column;
     padding-top:10px;
-    outline:yellow dotted 1px;
 }
 
+/*design for input boxes except submit button*/
 #full_name,#email,#phone_num,#message,#address,#card,#password,#promo{
     width:100%;
     height:20px;
@@ -389,9 +383,7 @@ label{
     font-weight:normal;
 }
 
-
 /*indiv items pages*/
-
 .indiv_item{
     display:flex;
     width:100%;
@@ -399,10 +391,7 @@ label{
     flex-wrap:wrap;
     align-items: center;
     justify-content: center;
-    outline:red solid 3px;
-
     margin-bottom:5%;
-    
   }
 
   .indiv_info{
@@ -412,7 +401,6 @@ label{
     flex-basis:45%;
     align-items: center;
     color:#CEA359;
-    outline:yellow  3px solid;
     margin-top: 5%;
     margin-left: 2%;
     margin-right: 2%;
@@ -462,6 +450,10 @@ label{
 
 
   @media (max-width: 1080px) {
+    .splash_info h2{
+        font-size:15px;
+    }
+
     .indiv_info{
       flex:1 100%;
       

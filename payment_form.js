@@ -8,13 +8,12 @@ function form_validation() {
     const password=document.getElementById('password').value.trim();
     const promo=document.getElementById('promo').value.trim();
 
-    // Validate name
+    // Validation methods which include whether format of input is right or whether it is empty 
     if (name === '') {
       document.getElementById('full_name').style.border="red solid 3px";
         return false;
     }
 
-    // Validate email
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(email)) {
         document.getElementById('email').style.border="red solid 3px";
@@ -46,10 +45,7 @@ function form_validation() {
         return false;
     }
 
-
-
-
-    // If all validations pass, you can submit the form
+    // form is summitted if every single validation passed 
     alert('Form submitted successfully!');
     return true;
 }
