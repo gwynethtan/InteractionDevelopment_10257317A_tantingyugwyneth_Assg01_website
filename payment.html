@@ -1,6 +1,6 @@
 <html>
     <head>
-        <title>Assignment 1 catelogue</title>
+        <title>Assignment 1 contact us</title>
         <link rel="stylesheet" href="normalize.css" type="text/css">
         <link rel="stylesheet" href="style.css" type="text/css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,44 +20,39 @@
             </nav>
         </header>
         <div class="content_description">
-            <h1>Catelogue</h1>
-            <div class="filter">
-                <div id="all" class="filter_choice">
-                    <p>All</p>
-                </div>
-                <div id="sugary" class="filter_choice">
-                    <p>Sugary</p>
-                </div>
-                <div id="savory" class="filter_choice">
-                    <p>Savory</p>
-            </div>
+            <h1>Cart</h1>
+          
         </div>
 
-        <div class="all_items">
-            <div class="item" class="waffle">
-                <a href="waffle.html">
-                    <img src="images/waffle.jpeg" alt="waffle" class="item_img">
-                    <p class="item_name">Waffle pack</p>
-                    <p class="price">$6</p>
-                </a>
+        <form class="contact_form">
+            <div class="questions">
+                
+                <label for="full_name">Full name
+                <input type="text" id="full_name" name="full_name"></label>
+
+                <label for="email">Email
+                <input type="email" id="email" name="email"></label>
+
+                <label for="phone_num">Phone number
+                <input type="number" id="phone_num" name="phone_num"></label>
+
+                <label for="address">Address
+                <input type="text" id="address" name="address"></label>
+
+                <label for="card_num">Credit card number
+                <input type="number" id="card_num" name="card_num"></label>
+
+                <label for="password">Password
+                <input type="text" id="password" name="password"></label>
+                
+                <label for="promo">Promo code
+                <input type="text" id="promo" name="promo"></label>
+
+
+                <button class="submit">Submit</button>
             </div>
 
-            <div class="item" class="pancake">
-                <a href="indiv_items/pancake.html">
-                    <img src="images/pancake.jpeg" alt="pancake" class="item_img">
-                    <p class="item_name">Pancake pack</p>
-                    <p class="price">$6</p>
-                </a>
-            </div>
-            <div class="item" class="bagel">
-                <a href="indiv_items/bagel.html">
-                    <img src="images/bagel.jpeg" alt="bagel" class="item_img">
-                    <p class="item_name">Bagel pack</p>
-                    <p class="price">$6</p>
-                </a>
-            </div>
-        </div>
-
+        </form>
         <footer>
             <h4>Follow us!</h4>
 
@@ -72,12 +67,10 @@
                     <img src="images/twitter.png" alt="instagram" class="footer_icon" > 
                 </a>
             </div>
-
+            
             <hr> 
             <p>&copy;2023 gwynethbakes pte ltd. All rights reserved.</p>
         </footer>
-
         
-
     </body>
 </html>
