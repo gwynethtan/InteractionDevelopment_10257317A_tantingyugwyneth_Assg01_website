@@ -184,7 +184,6 @@ body{ /*to ensure footer sticks to the end of page*/
     display:flex;
     flex-direction: column;
     align-items: center;
-    outline:red 3px solid;
     
 }
 #bread{

@@ -1,5 +1,5 @@
 function form_validation() {
-    // Get form inputs
+    // Get form inputs and remove whitespaces
     const name = document.getElementById('full_name').value.trim();
     const email = document.getElementById('email').value.trim();
     const phone_num = document.getElementById('phone_num').value.trim();
@@ -27,8 +27,6 @@ function form_validation() {
         document.getElementById('message').style.border="red solid 3px";
           return false;
       }
-
-    
 
     // form is summitted if every single validation passed 
     alert('Form submitted successfully!');

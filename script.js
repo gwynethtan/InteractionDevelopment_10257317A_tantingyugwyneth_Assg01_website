@@ -9,19 +9,19 @@ const testimonials = [
     let i = 0;
     let j = testimonials.length;
     let testimonialContainer = document.getElementById("bread_container");
-    let nextBtn = document.getElementById("next");
-    let prevBtn = document.getElementById("prev");
-    nextBtn.addEventListener("click", () => {
+    let next = document.getElementById("next");
+    let prev = document.getElementById("prev");
+    next.addEventListener("click", () => {
       i = (j + i + 1) % j;
-      displayTestimonial(); //update display
+      output_testimonial(); //update display
     });
-    prevBtn.addEventListener("click", () => {
+    prev.addEventListener("click", () => {
       i = (j + i - 1) % j;
-      displayTestimonial(); //update display
+      output_testimonial(); //update display
     });
 
     //physically display the output on the website
-    let displayTestimonial = () => {
+    let output_testimonial = () => {
       testimonialContainer.innerHTML = `
         <p>${testimonials[i].content}</p>
         <p>${testimonials[i].person}</>
