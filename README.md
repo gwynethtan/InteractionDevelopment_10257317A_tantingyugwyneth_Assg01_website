@@ -48,7 +48,7 @@ Testimonials
 Click next to see next testimonial 
 Click previous to see next testimonial 
 
-## Catalogue page 
+Catalogue page 
 Click item to view item description
 
 ## Credits
