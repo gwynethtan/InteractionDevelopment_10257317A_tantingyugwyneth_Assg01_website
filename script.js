@@ -1,7 +1,7 @@
 const testimonials = [
         { content: "Easy to follow instructions and I had a fun time baking it", person: "- Miss Tan" },
-        { content: "Delicious and fluffy! The best recipe I've tried so far.", person: "- Mr. Smith" },
-        { content: "I love the variety of flavors. Great recipe collection!", person: "- Mrs. Johnson" }
+        { content: "Im so glad this shop existed. I got to spend more time with my children through baking", person: "- Mr. Smith" },
+        { content: "Not your usual bread.Love it!", person: "- Mrs Poh" }
     ];
 
     let i = 0;

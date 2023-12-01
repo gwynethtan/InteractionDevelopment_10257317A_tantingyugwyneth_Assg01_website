@@ -15,34 +15,31 @@
                     <li><a href="index.html">Home</a></li>
                     <li><a href="catelogue.html">Catelogue</a></li>
                     <li><a href="contact.html">Contact Us</a></li>
-                    <li><a href="cart.html">Cart</a></li>
                 </ul>
             </nav>
         </header>
         <div class="content_description">
             <h1>Contact us</h1>
         </div>
-
-        <form class="contact_form">
+        <script src="contact_form.js"></script>
+        <form class="contact_form" onsubmit="return form_validation()">
             <div class="questions">
                 <label for="full_name">Full name
                 <input type="text" id="full_name" name="full_name"></label>
-
+                    
                 <label for="email">Email
                 <input type="email" id="email" name="email"></label>
-
-                <label for="number">Phone number
-                <input type="number" id="phone_num" name="phone_num"></label>
-
+    
+                <label for="phone_num">Phone number
+                <input type="number" id="phone_num" name="phone_num" ></label>
+    
                 <label for="message">Message
-                <input type="text" id="message" name="message" class="message"></label>
-
-                <button class="submit">Submit</button>
+                <input type="text" id="message" name="message" class="message"></label> 
+        
+                <input type="submit" class="submit_button" value="Submit">   
             </div>
         </form>
-
-
-
+        
         <footer>
             <h4>Follow us!</h4>
 
@@ -62,4 +59,5 @@
             <p>&copy;2023 gwynethbakes pte ltd. All rights reserved.</p>
         </footer>
     </body>
+    
 </html>
